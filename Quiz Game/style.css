@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: url(bg-img2.jpg);
+  background-repeat: no-repeat;
+  transition: all 0.4s;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  padding: 0.5rem 2.4rem;
+}
+
+.welcome-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 2rem 0 #f8f9fa;
+  margin-top: 4.8rem;
+  max-width: 90rem;
+  border-radius: 5%;
+  padding: 0 1.8rem;
+}
+
+.welcome-header {
+  font-size: 3.2rem;
+  margin-top: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 0 1.8rem;
+}
+
+.welcome-img {
+  width: 90rem;
+}
+
+.start-btn:link,
+.start-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  padding: 1.4rem 4.8rem;
+  border-radius: 20000rem;
+  background-color: #5f3dc4;
+  color: #fff;
+  margin: 0 1.8rem 1.8rem 0;
+}
+
+.start-btn:hover,
+.start-btn:active {
+  background-color: hsla(255, 53%, 50%, 0.5);
+}
+
+.quiz-box {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  max-width: 60rem;
+  box-shadow: 0 1px 2rem 0 #f8f9fa;
+  display: none;
+}
+
+.quiz-box .submit-btn {
+  align-self: flex-end;
+}
+
+.img {
+  width: 60rem;
+  height: 35rem;
+}
+
+.question-header {
+  color: #184e77;
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.answers-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 2.4rem;
+}
+
+.answer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0 #999;
+  border-radius: 10000rem;
+  width: 25rem;
+  height: 5rem;
+}
+
+.answer:link,
+.answer:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #0b7285;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.answer:hover,
+.answer:active {
+  color: hsla(189, 85%, 28%, 0.5);
+}
+
+.score {
+  font-size: 2.2rem;
+  color: #40c057;
+}
+
+.submit-btn:link,
+.submit-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 1.4rem 4.8rem;
+  border-radius: 20000rem;
+  background-color: #5f3dc4;
+  color: #fff;
+  margin: 0 1.8rem 1.8rem 0;
+}
+
+.submit-btn:hover,
+.submit-btn:active {
+  background-color: hsla(255, 53%, 50%, 0.5);
+}
+
+.message {
+  font-size: 1.4rem;
+  color: #e03131;
+}
+
+.correct-answer {
+  background-color: #40c057;
+  color: #fff !important;
+}
+
+.incorrect-answer {
+  background-color: #e03131;
+  color: #fff !important;
+}
+
+.end-message {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.play-again-btn:link,
+.play-again-btn:visited {
+  display: none;
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 1.4rem 4.8rem;
+  border-radius: 20000rem;
+  background-color: #5f3dc4;
+  color: #fff;
+  margin: 0 1.8rem 1.8rem 0;
+}
+
+.play-again-btn:hover,
+.play-again-btn:active {
+  background-color: hsla(255, 53%, 50%, 0.5);
+}
+
+@media (max-width: 56.875em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .welcome-window {
+    max-width: 70rem;
+    padding: 0;
+  }
+
+  .welcome-header {
+    font-size: 2.6rem;
+  }
+
+  .welcome-img {
+    width: 70rem;
+  }
+
+  .start-btn:link,
+  .start-btn:visited {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .welcome-window {
+    max-width: 50rem;
+    margin-top: 12.8rem;
+  }
+
+  .welcome-header {
+    font-size: 2.2rem;
+  }
+
+  .welcome-img {
+    width: 50rem;
+  }
+
+  .start-btn:link,
+  .start-btn:visited {
+    font-size: 1.6rem;
+  }
+
+  .quiz-box {
+    gap: 2.8rem;
+    max-width: 50rem;
+  }
+
+  .img {
+    width: 50rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .welcome-window {
+    max-width: 35rem;
+    margin-top: 12.8rem;
+  }
+
+  .welcome-header {
+    font-size: 2rem;
+    padding: 0 1.4;
+  }
+
+  .welcome-img {
+    width: 35rem;
+  }
+
+  .start-btn:link,
+  .start-btn:visited {
+    font-size: 1.6rem;
+  }
+
+  .quiz-box {
+    max-width: 40rem;
+  }
+
+  .question-header {
+    font-size: 2rem;
+  }
+
+  .answer:link,
+  .answer:visited {
+    font-size: 1.8rem;
+  }
+
+  .score {
+    font-size: 1.8rem;
+  }
+
+  .submit-btn:link,
+  .submit-btn:visited {
+    font-size: 1.8rem;
+  }
+
+  .img {
+    width: 40rem;
+    height: 25rem;
+  }
+}
